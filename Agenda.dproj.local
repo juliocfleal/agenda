@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/12/20 21:25:54.308,=C:\Users\Julio Leal\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 21:26:39.038,C:\Users\Julio Leal\Documents\Agenda\UnitMain.dfm=C:\Users\Julio Leal\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/12/20 21:26:39.038,C:\Users\Julio Leal\Documents\Agenda\UnitMain.pas=C:\Users\Julio Leal\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 21:28:20.490,C:\Users\Julio Leal\Documents\Agenda\Agenda.dproj=C:\Users\Julio Leal\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/12/20 21:30:03.166,=C:\Users\Julio Leal\Documents\Agenda\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 21:30:42.048,C:\Users\Julio Leal\Documents\Agenda\UnitDM.pas=C:\Users\Julio Leal\Documents\Agenda\Unit1.pas</Transaction>
+    <Transaction>2021/12/20 21:30:42.048,C:\Users\Julio Leal\Documents\Agenda\UnitDM.dfm=C:\Users\Julio Leal\Documents\Agenda\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
