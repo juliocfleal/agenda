@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Mask, Vcl.DBCtrls,
+  Vcl.ExtCtrls, Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
   TForm1 = class(TForm)
@@ -16,6 +17,13 @@ type
     DBCheckBox1: TDBCheckBox;
     Label4: TLabel;
     DBMemo1: TDBMemo;
+    Label5: TLabel;
+    DBText1: TDBText;
+    DBNavigator1: TDBNavigator;
+    DBGrid1: TDBGrid;
+    txtSearch: TEdit;
+    Label6: TLabel;
+    procedure txtSearchChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,5 +38,10 @@ implementation
 {$R *.dfm}
 
 uses UnitDM;
+
+procedure TForm1.txtSearchChange(Sender: TObject);
+begin
+  DM.tbContatos.Locate('nome', txtSearch.Text,[loPartialKey]);
+end;
 
 end.

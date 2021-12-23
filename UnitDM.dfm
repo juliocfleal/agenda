@@ -14,6 +14,7 @@ object DM: TDM
   end
   object tbContatos: TFDTable
     Active = True
+    AfterInsert = tbContatosAfterInsert
     IndexFieldNames = 'id'
     Connection = Connection
     TableName = 'agenda.contatos'
@@ -22,33 +23,34 @@ object DM: TDM
     object tbContatosid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ReadOnly = True
     end
     object tbContatosnome: TStringField
+      AutoGenerateValue = arDefault
       FieldName = 'nome'
       Origin = 'nome'
-      Required = True
       Size = 50
     end
     object tbContatoscelular: TStringField
+      AutoGenerateValue = arDefault
       FieldName = 'celular'
       Origin = 'celular'
-      Required = True
       Size = 16
     end
     object tbContatosbloqueado: TBooleanField
+      AutoGenerateValue = arDefault
       FieldName = 'bloqueado'
       Origin = 'bloqueado'
-      Required = True
     end
     object tbContatosdata: TDateTimeField
+      AutoGenerateValue = arDefault
       FieldName = 'data'
       Origin = 'data'
-      Required = True
     end
     object tbContatosobservacoes: TMemoField
+      AutoGenerateValue = arDefault
       FieldName = 'observacoes'
       Origin = 'observacoes'
-      Required = True
       BlobType = ftMemo
     end
   end
